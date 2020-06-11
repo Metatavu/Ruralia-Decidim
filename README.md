@@ -1,3 +1,13 @@
+## Basic login info
+This will also create some default data so you can start testing the app:
+
+A Decidim::System::Admin with email system@example.org and password decidim123456, to log in at /system.
+A Decidim::Organization named Decidim Staging. You probably want to change its name and hostname to match your needs.
+A Decidim::User acting as an admin for the organization, with email admin@example.org and password decidim123456.
+A Decidim::User that also belongs to the organization but it's a regular user, with email user@example.org and password decidim123456.
+
+Installation info: https://github.com/decidim/decidim/blob/master/docs/manual-installation.md
+
 # DecidimMikkeli
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
