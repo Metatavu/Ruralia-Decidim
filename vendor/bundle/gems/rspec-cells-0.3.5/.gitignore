@@ -1,0 +1,5 @@
+.idea/
+*.lock
+*.gem
+/.rvmrc
+spec/tmp

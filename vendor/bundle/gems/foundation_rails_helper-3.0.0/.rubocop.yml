@@ -1,0 +1,16 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Include:
+    - Rakefile
+    - Gemfile
+    - '*.gemspec'
+  Exclude:
+    - 'vendor/**/*'
+
+Documentation:
+  Enabled: false
+
+Style/VariableNumber:
+    EnforcedStyle: 'snake_case'

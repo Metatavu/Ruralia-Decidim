@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+module Decidim
+  module ContentParsers
+    autoload :BaseParser, "decidim/content_parsers/base_parser"
+    autoload :UserParser, "decidim/content_parsers/user_parser"
+    autoload :HashtagParser, "decidim/content_parsers/hashtag_parser"
+    autoload :NewlineParser, "decidim/content_parsers/newline_parser"
+    autoload :LinkParser, "decidim/content_parsers/link_parser"
+  end
+end
