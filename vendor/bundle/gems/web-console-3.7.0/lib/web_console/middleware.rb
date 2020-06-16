@@ -10,7 +10,7 @@ module WebConsole
     @@mount_point = "/__web_console"
 
     cattr_accessor :whiny_requests
-    @@whiny_requests = true
+    @@whiny_requests = false
 
     def initialize(app)
       @app = app
