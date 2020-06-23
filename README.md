@@ -8,7 +8,7 @@ A Decidim::User that also belongs to the organization but it's a regular user, w
 
 Installation info: https://github.com/decidim/decidim/blob/master/docs/manual-installation.md
 
-# DecidimMikkeli
+# Omaidea Decidim
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
