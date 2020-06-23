@@ -1,7 +1,7 @@
 // // Variables
 // 
-// $primary: #ef604d;
-// $primary-rgb: 239,96,77;
+$primary: #52ACAA;
+$primary-rgb: 82,172,170;
 // $secondary: #599aa6;
 // $secondary-rgb: 89,154,166;
 // $success: #57d685;
@@ -26,9 +26,9 @@
 // 
 // // Define custom properties as css color variables
 // 
-// :root{
-//   --primary: #{$primary};
-//   --primary-rgb: #{$primary-rgb};
+:root{
+     --primary: #{$primary};
+     --primary-rgb: #{$primary-rgb};
 //   --secondary: #{$secondary};
 //   --secondary-rgb: #{$secondary-rgb};
 //   --success: #{$success};
@@ -44,6 +44,52 @@
 //   --twitter: #{$twitter};
 //   --facebook: #{$facebook};
 //   --google: #{$google};
-// }
+    .title-bar {
+        background-color: $primary;
+        & .navbar{
+            background-color: $primary;
+        }
+
+        & .topbar {
+            justify-content: flex-start;
+        }
+        @media (max-width: 639px) {
+            & .topbar {
+                justify-content: flex-end;
+            }
+        }
+    }
+    @media screen and (max-width: 39.9375em){
+        .logo-bar {
+            border-top: 0px;
+            position: absolute;
+            top: 34px;
+        }
+    }
+    .logobar {
+        justify-content: space-around;
+    }
+
+    .main-footer {
+        background-color: $primary;
+        & a {
+            color: white;
+        }
+    }
+    .mini-footer {
+        background-color: $primary;
+        & a {
+            color: white;
+        }
+    }
+    .footer-logo-div {
+        height: 100%;
+        & .footer-logo {
+            margin: auto;
+        }
+    }
+
+}
+
 
 @import "decidim/application";
