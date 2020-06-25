@@ -64,11 +64,14 @@ $primary-rgb: 82,172,170;
             height: 500px;
         }
     }
+    .logo-bar {
+    background-color: $primary;
+    }
     @media screen and (max-width: 39.9375em){
         .logo-bar {
             border-top: 0px;
             position: absolute;
-            top: 34px;
+            top: 50px;
         }
     }
     .logobar {
@@ -104,12 +107,37 @@ $primary-rgb: 82,172,170;
 
     .hero-picture {
         background-position: top center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 500px;
         background-color: #007a86;
     }
-
+    @media screen and (max-width: 39.9375em){
+        .hero-picture {
+            height: 250px;
+        }
+    }
+    @media screen and (min-width: 39.9375em){
+        .hero-picture {
+            height: 350px;
+        }
+    }
+    @media screen and (min-width: 1053px){
+        .hero-picture {
+            height: 500px;
+        }
+    }
+    @media screen and (min-width: 1450px){
+        .hero-picture {
+            background-size: contain;
+        }
+    }
+    .custom-content-banner {
+        padding: 25px;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 
