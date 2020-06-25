@@ -30,4 +30,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  decidim:
+    menu:
+      processes: 'Participate'
+      more_information: 'About'
+  layouts:
+    footer:
+      feedback: 'Give feedback'
