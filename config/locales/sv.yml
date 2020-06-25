@@ -1,0 +1,8 @@
+sv:
+  decidim:
+    menu:
+      processes: 'Delta'
+      more_information: 'Tilläggsinformation'
+  layouts:
+    footer:
+      feedback: 'Ge feedback'
