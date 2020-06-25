@@ -58,6 +58,11 @@ $primary-rgb: 82,172,170;
                 justify-content: flex-end;
             }
         }
+        & .header-hero {
+            margin: 0px;
+            padding: 0px;
+            height: 500px;
+        }
     }
     @media screen and (max-width: 39.9375em){
         .logo-bar {
@@ -81,12 +86,28 @@ $primary-rgb: 82,172,170;
         & a {
             color: white;
         }
+        & .footer-div {
+            padding-top: 20px;
+        }
+        @media screen and (max-width: 39.9375em){
+            .footer-div {
+                padding-top: 10px;
+            }
+        }
     }
     .footer-logo-div {
         height: 100%;
         & .footer-logo {
             margin: auto;
         }
+    }
+
+    .hero-picture {
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 500px;
+        background-color: #007a86;
     }
 
 }

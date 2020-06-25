@@ -96,11 +96,6 @@ end
           </div>
         </div>
         <div class="title-bar logo-bar">
-          <% if current_organization.official_img_header? %>
-            <%= link_to  current_organization.official_url, class: "logo-cityhall" do %>
-              <%= image_tag current_organization.official_img_header.url.to_s , alt: current_organization.name %>
-            <% end %>
-          <% end %>
           <div class="row column logobar">
             <div class="logo-wrapper">
               <%= render partial: "layouts/decidim/logo", locals: { organization: current_organization } %>
