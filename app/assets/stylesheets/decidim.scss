@@ -132,11 +132,21 @@ $primary-rgb: 82,172,170;
             background-size: contain;
         }
     }
-    .custom-content-banner {
-        padding: 25px;
-        background-position: top center;
-        background-size: cover;
+    .card--process__column, .card__content {
+        background-color: transparent !important;
+    }
+    .card--full__image {
+        background-size: contain;
+        object-fit: contain;
+    }
+    .custom-process_card {
         background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+    }
+    .custom-process-header {
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
