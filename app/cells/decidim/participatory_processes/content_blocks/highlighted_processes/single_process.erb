@@ -6,7 +6,7 @@
       <article class="card card--full card--process">
         <div class="row collapse card--process__row  custom-process_card" style="background-image:url(<%= process.hero_image.url %>)">
           <div class="column large-6 card--process__column" >
-            <div class="card__content">
+            <div class="card__content custom-card__content">
               <%= link_to decidim_participatory_processes.participatory_process_path(process), class: "card__link" do %>
                 <h2 class="card__title"><%= translated_attribute process.title %></h2>
               <% end %>

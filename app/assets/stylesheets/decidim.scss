@@ -132,7 +132,7 @@ $primary-rgb: 82,172,170;
             background-size: contain;
         }
     }
-    .card--process__column, .card__content {
+    .card--process__column {
         background-color: transparent !important;
     }
     .card--full__image {
@@ -143,10 +143,14 @@ $primary-rgb: 82,172,170;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom right;
+        opacity: 1;
     }
     .custom-process-header {
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .custom-card__content {
+        background-color: rgba(255,255,255,0.5);
     }
 }
 
