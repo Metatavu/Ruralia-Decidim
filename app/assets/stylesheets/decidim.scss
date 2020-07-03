@@ -151,7 +151,17 @@ $primary-rgb: 82,172,170;
     .custom-card__content {
         background-color: rgba(255,255,255,0.5);
     }
-}
+    .column.row.row, .row.row.columns {
+        float: none;
+        justify-content: space-between;
+    }
+    .topbar__user, .topbar__dropmenu {
+        margin: 0px;
+    }
+    .is-dropdown-submenu-parent {
+        margin-bottom: 1px;
+    }
 
+}
 
 @import "decidim/application";
