@@ -1,4 +1,18 @@
-## Basic login info
+## Basic info
+
+To start local developing environment you can either use 
+```
+bundle install
+bin/rails db:create db:migrate
+bin/rails s
+```
+
+*Or* with docker-compose
+
+```
+docker-compose up
+```
+
 This will also create some default data so you can start testing the app:
 
 A Decidim::System::Admin with email system@example.org and password decidim123456, to log in at /system.

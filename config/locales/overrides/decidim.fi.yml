@@ -3,3 +3,73 @@ fi:
     menu:
       processes: 'Osallistu'
       more_information: 'Lisätietoja'
+    pages:
+      home:
+        hero:
+          participate: 'Osallistu'
+        extended:
+          debates: 'Keskustelut'
+          debates_explanation: 'Jaa henkilökohtaiset mielipiteesi ja näkemyksesi keskusteluiden kautta.'
+          meetings_explanation: 'Tavataan ja osallistutaan kaupunkimme puolesta.'
+          proposals: 'Ideat'
+          proposals_explanation: 'Avoin tila asukkaiden ideoille siitä, millaisessa kaupungissa haluaisimme asua.'
+          how_to_participate: 'Kuinka osallistun'
+        statistics:
+          headline: 'Tämänhetkiset tilastot'
+        footer_sub_hero:
+          footer_sub_hero_headline: 'Yhteisöllinen osallistumispalvelu'
+        highlighted_processes:
+          active_processes: 'Käynnissä nyt'
+          see_all_processes: 'Näytä kaikki'
+        highlighted_process_groups:
+          active_processes: 'Käynnissä nyt'
+          see_all_processes: 'Näytä kaikki'
+    admin:
+      models:
+        participatory_process:
+          fields:
+            promoted: Tärkeä
+    participatory_processes:
+      pages:
+        home:
+          highlighted_processes:
+            active_processes: Käynnissä nyt
+            see_all_processes: Näytä kaikki
+      participatory_processes:
+        filters:
+          counters:
+            active:
+              one: Käynnissä nyt
+              other: "Käynnissä nyt"
+            all:
+              one: Kaikki
+              other: "Kaikki"
+            past:
+              one: Menneet
+              other: "Menneet"
+            upcoming:
+              one: Tulevat
+              other: "Tulevat"
+          explanations:
+            no_active: Ei aktiivisia
+            no_active_nor_upcoming: Ei käynnissä olevia tai tulevia
+            no_active_nor_upcoming_callout: Käynnissä olevia tai tulevia ei ole tiedossa. Tässä on luettelo menneistä.
+          names:
+            active: Käynnissä nyt
+            all: Kaikki
+            past: Menneet
+            upcoming: Tulevat
+  activemodel:
+    attributes:
+      participatory_process:
+        promoted: Tärkeä
+  layouts:
+    decidim:
+      process_navigation:
+        process_menu_item: Tietoa
+      participatory_process_groups:
+        participatory_process_group:
+          processes_count: 'Osiot:'
+      participatory_processes:
+        index:
+          promoted_processes: Korostettu nyt
