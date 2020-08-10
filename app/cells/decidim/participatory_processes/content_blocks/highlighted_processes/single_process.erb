@@ -4,7 +4,7 @@
     <h3 class="section-heading"><%= t("active_processes", scope: i18n_scope) %></h3>
     <div class="row collapse">
       <article class="card card--full card--process">
-        <div class="row collapse card--process__row  custom-process_card" style="background-image:url(<%= process.hero_image.url %>)">
+        <div class="row collapse card--process__row">
           <div class="column large-6 card--process__column" >
             <div class="card__content custom-card__content">
               <%= link_to decidim_participatory_processes.participatory_process_path(process), class: "card__link" do %>
@@ -14,11 +14,11 @@
               <%= link_to t("more_information", scope: i18n_scope), decidim_participatory_processes.participatory_process_path(process), class: "button secondary small hollow" %>
             </div>
           </div>
-          <div class="column large-6 card--process__column">
+          <div class="column large-6 card--process__column custom-process_card"  style="background-image:url(<%= process.hero_image.url %>)">
             <div class="card--full__image">
               <div class="card__content row collapse">
                 <div class="large-6 large-offset-6 columns">
-                  <%= link_to decidim_participatory_processes.participatory_process_path(process), class: "button expanded button--sc" do %>
+                  <%= link_to decidim_participatory_processes.participatory_process_path(process), class: "button button--sc custom-button-margin expanded" do %>
                     <%= t("participate", scope: i18n_scope) %>
                     <% if process.active_step %>
                       <span class="button__info">
