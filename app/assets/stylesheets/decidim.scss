@@ -171,6 +171,9 @@ $primary-rgb: 82,172,170;
             margin-left: 15px;
         }
     }
+    .footer-separator{
+        flex-grow: 0;
+    }
 }
 
 @import "decidim/application";
