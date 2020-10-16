@@ -5,16 +5,16 @@
 %>
 
 <div class="mini-footer">
-  <div class="row">
-      <div class="medium-6 large-6 column footer-logo-div">
+    <div class="footer-logo-div">
       <% if current_organization.official_img_footer? %>
         <%= link_to current_organization.official_url, class: "footer-logo" do %>
           <%= image_tag current_organization.official_img_footer.url.to_s , alt: current_organization.name %>
         <% end %>
       <% end %>
-    </div> 
-    <div class="medium-3 large-4 column">
-      <div class="footer-div">
+    </div>
+  <div class="row">
+    <div class="medium-6 large-6 column">
+      <div class="footer-div footer-left">
         <a rel="license"
           href="http://creativecommons.org/licenses/by-sa/4.0/"
           target="_blank" rel="noopener">
@@ -22,8 +22,8 @@
         <%= t("layouts.decidim.footer.made_with_open_source").html_safe %>
       </div>
     </div>   
-    <div class="medium-3 large-2 column">
-      <div class="footer-div">
+    <div class="medium-6 large-6 column">
+      <div class="footer-div footer-right">
         <div class="mini-footer__copyright">
           <a href="mailto:<%= feedback_email %>?subject=<%= feedback_subject %>"><%= t("layouts.footer.feedback").html_safe %></a>
         </div>
