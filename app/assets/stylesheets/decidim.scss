@@ -44,7 +44,49 @@ $primary-rgb: 82,172,170;
 //   --twitter: #{$twitter};
 //   --facebook: #{$facebook};
 //   --google: #{$google};
+
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6,
+    a, .a {
+    font-family: "Segoe UI", Helvetica, Roboto, Arial, sans-serif;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    }
+
+    p, .p,
+    ul, .ul {
+    font-family: "Segoe UI", Helvetica, Roboto, Arial, sans-serif;
+    }
+
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6 {
+        font-weight: normal;
+    }
+
+    .title-bar a {
+        font-size: large;
+        font-weight: bold;
+        color: #fff;
+      
+        &:hover{
+          color: #000;
+        }
+    }
+      
+    .main-nav__link--active a{
+    color: black;
+    }
+
     .title-bar {
+        padding-bottom: 16px;
         background-color: $primary;
         & .navbar{
             background-color: $primary;
@@ -65,17 +107,41 @@ $primary-rgb: 82,172,170;
         }
     }
     .logo-bar {
-    background-color: $primary;
+        background-color: $primary;
+        justify-content: space-around;
+        @media (max-width: 639px) {
+            padding-top: 16px;
+            padding-bottom: 0px;
+        }
+        @media (min-width: 640px) {
+            padding-top: 0px;
+            padding-bottom: 18px;
+        }
     }
     @media screen and (max-width: 39.9375em){
         .logo-bar {
             border-top: 0px;
             position: absolute;
-            top: 50px;
+            top: 34px;
+        }
+
+    }
+
+    .off-canvas .navbar a{
+        color: white;
+        font-size: large;
+        font-weight: bold;
+      
+        &:hover{
+          color: rgba(255,255,255,0.8);
         }
     }
-    .logobar {
-        justify-content: space-around;
+
+    .dropdown.menu {
+        margin-top: 2px;
+        .is-active > a {
+          color: #000;
+        }
     }
 
     .main-footer {
@@ -98,11 +164,21 @@ $primary-rgb: 82,172,170;
             }
         }
     }
+    
     .footer-logo-div {
         height: 100%;
+        text-align: center;
         & .footer-logo {
             margin: auto;
         }
+    }
+
+    .footer-left {
+        text-align: right;
+    }
+
+    .footer-right {
+        text-align: left;
     }
 
     .hero-picture {
@@ -173,6 +249,11 @@ $primary-rgb: 82,172,170;
     }
     .footer-separator{
         flex-grow: 0;
+    }
+
+    .footer-social__icon .icon{
+        width: 32px;
+        height: 32px;
     }
 }
 
