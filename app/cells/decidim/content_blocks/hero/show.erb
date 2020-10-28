@@ -1,17 +1,21 @@
 <section class="extended<% if !translated_welcome_text.blank? %> hero<% else %> hero-picture<% end %>" style="background-image:url(<%= background_image %>);">
-  <div class="hero__container">
-    <div class="row">
-      <div class="columns small-centered large-10">
-        <h1 class="text-highlight heading1 hero-heading">
-          <% if !translated_welcome_text.blank? %>
-            <%= decidim_sanitize translated_welcome_text %>
-          <% end %>
-        </h1>
-      </div>
-    </div>
+  <div class="hero__container" style="height: 100%;">
     <% if !translated_welcome_text.blank? %>
+      <div class="row">
+        <div class="columns small-centered large-10">
+          <h1 class="text-highlight heading1 hero-heading">
+            <%= decidim_sanitize translated_welcome_text %>
+          </h1>
+        </div>
+      </div>
+    <% end %>
+      <% if translated_welcome_text.blank? %>
+      <div class="row" style="height: 75%">
+      </div>
+      <% end %>
+    <% if !translated_attribute(current_organization.cta_button_text).presence.blank? %>
     <div class="row">
-      <div class="columns small-centered small-6 medium-4 mediumlarge-3">
+      <div class="columns small-centered small-8 medium-4 mediumlarge-4 large-3">
         <%= cta_button %>
       </div>
     </div>
