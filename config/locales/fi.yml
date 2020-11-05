@@ -2,7 +2,7 @@ fi:
   layouts:
     decidim:
       process_header:
-        process_menu_item: Tietoa
+        process_menu_item: Yleistä
       participatory_process_groups:
         participatory_process_group:
           processes_count: 'Osiot:'
@@ -32,3 +32,10 @@ fi:
       highlighted_process_groups:
         active_processes: Käynnissä nyt
         see_all_processes: Näytä kaikki
+  decidim:
+    surveys:
+      surveys:
+        answer:
+          invalid: Kyselyyn vastaaminen epäonnistui.
+          spam_detected: Kyselyn vastaamisessa tapahtui virhe. Ehkä olit liian nopea, voisitko yrittää uudestaan?
+          success: Kiitos vastauksestasi! (Mikäli jätit yhteystietosi, olet mukana seuraavalla arvontakierroksella lahjakortista tai elokuvalipuista)

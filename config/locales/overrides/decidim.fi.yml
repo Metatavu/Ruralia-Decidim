@@ -70,7 +70,7 @@ fi:
   layouts:
     decidim:
       process_navigation:
-        process_menu_item: Tietoa
+        process_menu_item: Yleistä
       participatory_process_groups:
         participatory_process_group:
           processes_count: 'Osiot:'
