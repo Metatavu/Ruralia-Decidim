@@ -13,8 +13,8 @@
       <% end %>
     </div>
   <div class="row">
-    <div class="medium-6 large-6 column">
-      <div class="footer-div footer-left">
+    <div class="column text-center">
+      <div class="footer-div">
         <a rel="license"
           href="http://creativecommons.org/licenses/by-sa/4.0/"
           target="_blank" rel="noopener">
@@ -22,11 +22,11 @@
         <%= t("layouts.decidim.footer.made_with_open_source").html_safe %>
       </div>
     </div>   
-    <div class="medium-6 large-6 column">
-      <div class="footer-div footer-right">
-        <div class="mini-footer__copyright">
-          <a href="mailto:<%= feedback_email %>?subject=<%= feedback_subject %>"><%= t("layouts.footer.feedback").html_safe %></a>
-        </div>
+  </div>
+  <div class="row">
+    <div class="column text-center">
+      <div class="mini-footer__copyright">
+        <a href="mailto:<%= feedback_email %>?subject=<%= feedback_subject %>"><%= t("layouts.footer.feedback").html_safe %></a>
       </div>
     </div>
   </div>
