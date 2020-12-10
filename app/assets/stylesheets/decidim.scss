@@ -94,10 +94,17 @@ $primary-rgb: 82,172,170;
 
         & .topbar {
             justify-content: flex-start;
+            & div {
+                flex: auto;
+            }
         }
         @media (max-width: 639px) {
             & .topbar {
                 justify-content: flex-end;
+                & div {
+                    display: block;
+                }
+                
             }
         }
         & .header-hero {
