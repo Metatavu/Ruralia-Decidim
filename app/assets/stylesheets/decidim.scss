@@ -263,6 +263,11 @@ $primary-rgb: 82,172,170;
         width: 32px;
         height: 32px;
     }
+
+    .subhero{
+        padding: 4rem 0;
+        text-align: center;
+    }
 }
 
 @import "decidim/application";
