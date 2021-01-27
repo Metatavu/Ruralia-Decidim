@@ -1,21 +1,21 @@
 version: '3.1'
 services:
-  app:
-    image: "platoniq/decidim-hacks:latest"
+  omaidea-app:
+    build: .
     volumes:
-      - .:/code
+      - .:/code/Ruralia-Decidim
     environment:
       - PORT=3000
-      - DATABASE_HOST=pg
+      - DATABASE_HOST=Ruralia-Decidim
       - DATABASE_USERNAME=postgres
       - RAILS_ENV=development
       - RAILS_LOG_TO_STDOUT=1
     ports:
       - 3000:3000
     links:
-      - pg
-    command: /code/docker/init.sh
-  pg:
+      - Ruralia-Decidim
+    command: /code/Ruralia-Decidim/docker/init.sh
+  Ruralia-Decidim:
     image: postgres
     volumes:
       - pg-data:/var/lib/postgresql/data

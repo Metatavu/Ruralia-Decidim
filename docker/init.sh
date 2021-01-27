@@ -2,9 +2,9 @@
 
 # Temp files created by the container will be erasable by external user
 umask 0000
+gem install puma
 bundle install
 echo -e "\e[33mUpgrading Decidim..."
-bin/rails decidim:upgrade
 
 echo -e "\e[33mTrying to execute migrations..."
 if bin/rails db:migrate; then
@@ -17,8 +17,10 @@ else
     echo -e "\e[32mDatabase just created so let's seed some data..."
     bin/rails db:seed
 fi
-echo -e "\e[33mSeeding hacks content..."
-bin/rails db:seed:hacks
+
+bundle update decidim
+bin/rails decidim:upgrade
+bin/rails db:migrate
 
 echo
 echo -e "\e[32mGreat! Please use this user/password to login:"
