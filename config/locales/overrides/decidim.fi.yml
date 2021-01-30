@@ -1,5 +1,126 @@
 fi:
   decidim:
+    devise:
+      registrations:
+        new:
+          sign_up_service_account: 'Luo oma tunnus palveluun'
+          email_help: Sähköpostin tulee olla aito ja se tarkastetaan vahvistusviestillä.
+          sign_up: Rekisteröidy
+      sessions:
+        new:
+          sign_in: Kirjaudu sisään
+          sign_in_service_account: 'Kirjaudu palvelun omalla tunnuksella'
+          are_you_new?: Uusi käyttäjä?
+          register: Rekisteröidy
+    participatory_spaces:
+      proposal_categories:
+        ideas_count_phrase:
+          one: 'Idea'
+          other: 'Ideaa'
+      highlighted_proposals:
+        proposals: 'Katso mitä ideoita on jo ehdotettu'
+        ideas_total: 'Ideoita yhteensä %{count} kpl'
+        see_all_proposals: 'Katso kaikki ideat'
+    components:
+      proposals:
+        actions:
+          vote: Kannata
+        name: 'Ideat'
+        name_all: 'Kaikki ideat'
+    proposals:
+      actions:
+        new: 'Uusi idea'
+      create:
+        error: Idean tallennuksessa tapahtui virhe.
+        success: Idea tallennettu luonnoksena.
+      destroy_draft:
+        error: Idealuonnoksen poistamisessa tapahtui virheistä.
+        success: Idealuonnos poistettiin onnistuneesti.
+      publish:
+        error: Idean julkaisemisessa on tapahtunut virheitä.
+        success: Kiitos ideastasi!
+      update:
+        error: Idean tallentamisessa tapahtui virheitä.
+        success: Idea on päivitetty onnistuneesti.
+      update_draft:
+        error: Idealuonnoksen tallentamisessa tapahtui virheitä.
+        success: Idealuonnos päivitetty onnistuneesti.
+      proposals:
+        compare:
+          mine_is_different: Ideani on erilainen
+          no_similars_found: Hyvin tehty! Vastaavia ideoita ei löytynyt
+          title: Samankaltaiset ideat
+        complete:
+          send: Lähetä
+          title: Viimeistele ideasi lisäämällä kuva
+        count:
+          proposals_count: 'Yhteensä %{count} ideaa'
+        index:
+          all_proposals: 'Kaikki ideat'
+          new_proposal: 'Lisää oma ideasi'
+        orders:
+          label: 'Järjestä ideat:'
+          most_voted: 'Suosituin'
+        category_selector:
+          choose_category: 'Valitse aihepiiri'
+          show_all: 'Näytä kaikki'
+        proposal:
+          see_proposal: 'Katso idea'
+        vote_button:
+          vote: 'Tykkää'
+          already_voted: 'Tykätty'
+        flag_button:
+          report: 'Raportoi'
+        new:
+          title: 'Luo ideasi'
+          your_idea: 'Oma ideasi'
+          create_new_idea: 'Luo uusi idea'
+        edit:
+          title: 'Muokkaa ideaa'
+          select_a_category: 'Valitse aihepiiri'
+        edit_draft:
+          discard: Hylkää tämä luonnos
+          discard_confirmation: Haluatko varmasti hylätä tämän luonnoksen?
+          title: Muokkaa idealuonnosta
+        edit_form_fields:
+          write_your_proposal: 'Kirjoita oma ideasi'
+          address: 'Osoite'
+          add_address: 'Lisää osoite'
+          add_photo: 'Lisää kuva'
+        marker_popup:
+          address: 'Osoite'
+          view_proposal: 'Näytä idea'
+        preview:
+          modify: Muokkaa ideaa
+          proposal_edit_before_minutes:
+            one: Voit muokata tätä ideaa ensimmäisen minuutin kuluttua ehdotuksen julkaisemisesta. Kun tämä aikaikkuna sulkeutuu, et pysty muokkaamaan ideaa.
+            other: Voit muokata tätä ideaa ensimmäisten %{count} minuutin aikana idean julkaisemisesta. Kun tämä aikaikkuna sulkeutuu, et pysty muokkaamaan ideaa.
+          title: Julkaise ideasi
+          dont_want_name_visible: Etkö halua, että nimesi näkyy idean yhteydessä?
+          edit_profile: Muokkaa profiiliasi
+          after_edit_profile: Profiilin muokkauksen jälkeen päivitä tämä sivu uudestaan.
+        show:
+          edit_proposal: Muokkaa ideaa
+          withdraw_btn_hint: Jos muutat mieltäsi, voit perua ideasi, mikäli se ei ole saanut kannatusta. Ideaa ei poisteta kokonaan, se näkyy peruutettujen ideoiden luettelossa.
+          withdraw_confirmation: Haluatko varmasti peruuttaa tämän idean?
+          withdraw_proposal: Peruuta idea
+          show_on_map: Näytä karttanäkymässä
+    progress_bar:
+      votes_count:
+        one: '%{count} tykkäys'
+        other: '%{count} tykkäystä'
+    follows:
+      destroy:
+        button: 'Seurattu'
+    shared:
+      flag_modal:
+        does_not_belong: Sisältää lain vastaista toimintaa, itsemurhauhkauksia, henkilökohtaisia tietoja tai jotain muuta, jonka et usko kuuluvan tälle sivustolle.
+        offensive: Sisältää rasismia, seksismiä, loukkauksia, henkilöihin kohdistuneita hyökkäyksiä, tappouhkauksia tai mitä tahansa vihapuhetta.
+        spam: Sisältää klikkihoukutteita, mainostusta, huijauksia tai bottiskriptejä.
+        title: Ilmoita ongelmasta
+      share_modal:
+        copy: Kopioi
+        copied: Kopioitu
     participatory_process_steps:
       index:
         process_steps: Tapahtuman vaiheet

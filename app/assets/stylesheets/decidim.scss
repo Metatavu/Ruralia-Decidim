@@ -11,7 +11,7 @@ $primary-rgb: 82,172,170;
 // $alert: #ec5840;
 // $alert-rgb: 236,88,64;
 // 
-// $proposals: #238ff7;
+$proposals: #238ff7;
 // $actions: #57d685;
 // $debates: #fa6c96;
 // $meetings: #fabc6c;
@@ -27,8 +27,8 @@ $primary-rgb: 82,172,170;
 // // Define custom properties as css color variables
 // 
 :root{
-     --primary: #{$primary};
-     --primary-rgb: #{$primary-rgb};
+    --primary: #{$primary};
+    --primary-rgb: #{$primary-rgb};
 //   --secondary: #{$secondary};
 //   --secondary-rgb: #{$secondary-rgb};
 //   --success: #{$success};
@@ -37,7 +37,7 @@ $primary-rgb: 82,172,170;
 //   --warning-rgb: #{$warning-rgb};
 //   --alert: #{$alert};
 //   --alert-rgb: #{$alert-rgb};
-//   --proposals: #{$proposals};
+    --proposals: #{$proposals};
 //   --actions: #{$actions};
 //   --debates: #{$debates};
 //   --meetings: #{$meetings};
@@ -248,11 +248,6 @@ $primary-rgb: 82,172,170;
     @media screen and (max-width: 799px){
         .custom-button-margin {
             margin-bottom: 110px;
-        }
-    }
-    @media screen and (min-width: 1024px) {
-        .button.expanded {
-            margin-left: 15px;
         }
     }
     .footer-separator{
