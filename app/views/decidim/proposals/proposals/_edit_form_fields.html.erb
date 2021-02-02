@@ -62,9 +62,6 @@
   <fieldset>
     <legend><%= t("attachment_legend", scope: "decidim.proposals.proposals.edit") %></legend>
     <%= form.fields_for :attachment, @form.attachment do |nested_form| %>
-      <div class="field">
-        <%= nested_form.text_field :title %>
-      </div>
 
       <div class="field">
         <%= nested_form.upload :file, optional: false %>
