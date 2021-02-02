@@ -59,23 +59,23 @@
 <% end %>
 
 <% if component_settings.attachments_allowed? && @proposal %>
-    <div id="photo-field">
-      <%= form.fields_for :attachment, @form.attachment do |nested_form| %>
-        <div class="field">
-          <%= nested_form.hidden_field :title, value: "Untitled" %>
-        </div>
+  <fieldset>
+    <legend><%= t("attachment_legend", scope: "decidim.proposals.proposals.edit") %></legend>
+    <%= form.fields_for :attachment, @form.attachment do |nested_form| %>
+      <div class="field">
+        <%= nested_form.text_field :title %>
+      </div>
 
-        <div class="field">
-          <%= nested_form.upload :file, optional: false %>
-          <% if @form.errors[:attachment].present? %>
-            <% @form.errors[:attachment].each do |message| %>
-              <small class="form-error is-visible">
-                <%= message %>
-              </small>
-            <% end %>
+      <div class="field">
+        <%= nested_form.upload :file, optional: false %>
+        <% if @form.errors[:attachment].present? %>
+          <% @form.errors[:attachment].each do |message| %>
+            <small class="form-error is-visible">
+              <%= message %>
+            </small>
           <% end %>
-        </div>
-      <% end %>
-    </div>
-  </div>
+        <% end %>
+      </div>
+    <% end %>
+  </fieldset>
 <% end %>
