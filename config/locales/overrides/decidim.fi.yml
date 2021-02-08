@@ -12,6 +12,11 @@ fi:
           sign_in_service_account: 'Kirjaudu palvelun omalla tunnuksella'
           are_you_new?: Uusi käyttäjä?
           register: Rekisteröidy
+    endorsable:
+      endorsements: Tykkäykset
+    endorsement_buttons_cell:
+      already_endorsed: Tykätty
+      endorse: Tykkää
     participatory_spaces:
       proposal_categories:
         ideas_count_phrase:
