@@ -12,6 +12,11 @@ fi:
           sign_in_service_account: 'Kirjaudu palvelun omalla tunnuksella'
           are_you_new?: Uusi käyttäjä?
           register: Rekisteröidy
+    endorsable:
+      endorsements: Tykkäykset
+    endorsement_buttons_cell:
+      already_endorsed: Tykätty
+      endorse: Tykkää
     participatory_spaces:
       proposal_categories:
         ideas_count_phrase:
@@ -20,13 +25,31 @@ fi:
       highlighted_proposals:
         proposals: 'Katso mitä ideoita on jo ehdotettu'
         ideas_total: 'Ideoita yhteensä %{count} kpl'
-        see_all_proposals: 'Katso kaikki ideat'
+        see_all: Näytä kaikki ideat (%{count})
     components:
       proposals:
         actions:
-          vote: Kannata
+          vote: Äänestä
+          endorse: Tykkää
         name: 'Ideat'
         name_all: 'Kaikki ideat'
+    metrics:
+      accepted_proposals:
+        description: Hyväksyttyjen ideoiden määrä
+        object: ideat
+        title: Hyväksytyt ideat
+      endorsements:
+        description: Ideoihin kohdistuneiden tykkäysten määrä
+        object: 'tykkäykset'
+        title: 'Tykkäykset'
+      proposals:
+        description: Äänien määrä
+        object: äänet
+        title: Äänet
+      votes:
+        description: Ideoihin kohdistuneiden äänten määrä
+        object: äänet
+        title: Äänet
     proposals:
       actions:
         new: 'Uusi idea'
@@ -45,6 +68,34 @@ fi:
       update_draft:
         error: Idealuonnoksen tallentamisessa tapahtui virheitä.
         success: Idealuonnos päivitetty onnistuneesti.
+      models:
+        proposal:
+          fields:
+            endorsements: Tykkäykset
+        identity_selector_dialog:
+          endorse: 'Tykkää'
+      participatory_text_proposal:
+        alternative_title: Ei osallistuvia tekstejä tällä hetkellä
+        buttons:
+          amend: Muuta
+          comment: Kommentti
+          comments: Kommentit
+          endorse: 'Tykkää'
+      proposal_endorsements:
+        create:
+          error: Ehdotuksen tykkäämisessä on esiintynyt virheitä.
+        identities:
+          done: Valmis
+          select_identity: Valitse henkilöllisyys
+      proposal_endorsements_helper:
+        endorsement_button:
+          already_endorsed: Tykätty
+          endorse: 'Tykkää'
+      endorsement_identities_cabin:
+        already_endorsed: Tykätty
+        endorse: 'Tykkää'
+      render_endorsements_button_card_part:
+        endorse: 'Tykkää'
       proposals:
         compare:
           mine_is_different: Ideani on erilainen
@@ -58,6 +109,7 @@ fi:
         index:
           all_proposals: 'Kaikki ideat'
           new_proposal: 'Lisää oma ideasi'
+          view_proposal: 'Näytä idea'
         orders:
           label: 'Järjestä ideat:'
           most_voted: 'Suosituin'
@@ -66,9 +118,10 @@ fi:
           show_all: 'Näytä kaikki'
         proposal:
           see_proposal: 'Katso idea'
+          view_proposal: 'Näytä idea'
         vote_button:
-          vote: 'Tykkää'
-          already_voted: 'Tykätty'
+          vote: 'Äänestä'
+          already_voted: 'Äänestetty'
         flag_button:
           report: 'Raportoi'
         new:
@@ -101,14 +154,18 @@ fi:
           after_edit_profile: Profiilin muokkauksen jälkeen päivitä tämä sivu uudestaan.
         show:
           edit_proposal: Muokkaa ideaa
+          endorsements_list: 'Tykkääjät'
           withdraw_btn_hint: Jos muutat mieltäsi, voit perua ideasi, mikäli se ei ole saanut kannatusta. Ideaa ei poisteta kokonaan, se näkyy peruutettujen ideoiden luettelossa.
           withdraw_confirmation: Haluatko varmasti peruuttaa tämän idean?
           withdraw_proposal: Peruuta idea
           show_on_map: Näytä karttanäkymässä
+          hidden_endorsers_count:
+            one: ja %{count} muu
+            other: ja %{count} muuta
     progress_bar:
       votes_count:
-        one: '%{count} tykkäys'
-        other: '%{count} tykkäystä'
+        one: '%{count} ääni'
+        other: '%{count} ääntä'
     follows:
       destroy:
         button: 'Seurattu'
@@ -151,6 +208,8 @@ fi:
           see_all_processes: 'Näytä kaikki'
     admin:
       models:
+        proposal:
+          endorsements: 'Tykkäykset'
         participatory_process:
           fields:
             promoted: Tärkeä
@@ -198,3 +257,14 @@ fi:
       participatory_processes:
         index:
           promoted_processes: Korostettu nyt
+  activerecord:
+    models:
+      decidim/proposals/proposal:
+        one: Idea
+        other: Ideat
+      decidim/proposals/proposal_endorsement:
+        one: Tykkäys
+        other: 'Tykkäykset'
+      decidim/proposals/proposal_vote:
+        one: Ääni
+        other: Äänet
