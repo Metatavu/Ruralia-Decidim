@@ -1,25 +1,26 @@
-<div class="row">
-<!-- Side wizard commented out
-  <%= render partial: "wizard_aside" %>
--->
-  <div class="columns large-6 small-centered">
-    <%= render partial: "wizard_header" %>
+<div class="add-image-background">
+  <div class="row">
+  <!-- Side wizard commented out
+    <%= render partial: "wizard_aside" %>
+  -->
+    <div class="columns large-6 small-centered">
+      <%= render partial: "wizard_header" %>
 
-    <div class="card">
-      <div class="card__content">
-        <%= decidim_form_for(@form, url: update_draft_proposal_path(@proposal), method: :patch) do |form| %>
-          <%= render partial: "edit_form_fields", locals: { form: form } %>
+      <div class="card">
+        <div class="card__content">
+          <%= decidim_form_for(@form, url: update_draft_proposal_path(@proposal), method: :patch) do |form| %>
+            <%= render partial: "edit_form_fields", locals: { form: form } %>
 
-          <div class="actions">
-            <%= form.submit t(".send"), class: "button expanded mt-s mb-none", data: { disable: true } %>
-          </div>
-        <% end %>
+            <div class="actions">
+              <%= form.submit t(".send"), class: "button expanded mt-s mb-none", data: { disable: true } %>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
+  <!-- Div commented out
+    <div class="columns large-3"></div>
+  -->
   </div>
-<!-- Div commented out
-  <div class="columns large-3"></div>
--->
 </div>
-
 <%= javascript_include_tag "decidim/proposals/add_proposal" %>
