@@ -263,6 +263,41 @@ $proposals: #238ff7;
         padding: 4rem 0;
         text-align: center;
     }
+
+    .new-background{
+        background-image:  url("/assets/proposal-background/add-idea.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .compare-background{
+        background-image:  url("/assets/proposal-background/compare.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        min-height: 650px;
+    }
+
+    .publish-background{
+        background-image:  url("/assets/proposal-background/publish.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .add-image-background{
+        background-image:  url("/assets/proposal-background/add-image.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    @media screen and (min-width: 1450px){
+        .add-image-background, .new-background, .compare-background, .publish-background{
+            background-size: 1250px auto;
+        }
+    }
 }
 
 @import "decidim/application";
