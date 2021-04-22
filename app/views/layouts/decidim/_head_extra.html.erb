@@ -1,0 +1,10 @@
+<% if Rails.application.secrets.google_analytics_code.present? %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= j(Rails.application.secrets.google_analytics_code) %>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '<%= j(Rails.application.secrets.google_analytics_code) %>');
+  </script>
+<% end %>
