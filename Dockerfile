@@ -11,3 +11,4 @@ WORKDIR /code
 RUN bundle install && bundle exec figaro install
 RUN apt install -y git imagemagick wget
 RUN rake assets:precompile
+CMD [ "bin/rails", "-s" ]
