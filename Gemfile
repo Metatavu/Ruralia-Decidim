@@ -13,7 +13,7 @@ gem "decidim-initiatives", DECIDIM_VERSION
 
 gem "bootsnap", "~> 1.3"
 
-gem "puma", "~> 4.3.3"
+gem "puma", "~> 4.3.8"
 gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
