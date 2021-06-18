@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-DECIDIM_VERSION = "0.23.1"
+DECIDIM_VERSION = "0.24.3"
 
 source "https://rubygems.org"
 
@@ -10,12 +10,14 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-initiatives", DECIDIM_VERSION
+gem "concurrent-ruby", "1.1.9"
 
-gem "bootsnap", "~> 1.3"
+gem "bootsnap", "~> 1.7"
 
-gem "puma", "~> 4.3.3"
+gem "puma", "~> 5.3.2"
 gem "uglifier", "~> 4.1"
-
+gem 'delayed_job_active_record'
+gem "daemons"
 gem "faker", "~> 1.9"
 
 group :development, :test do
