@@ -13,5 +13,6 @@ else
 fi
 
 echo -e "\e[33mStarting rails server..."
+mkdir -p tmp/pids
 bundle exec puma
 # bundle exec rails server
