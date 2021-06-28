@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   app:
-    image: "platoniq/decidim-hacks:latest"
+    build: .
     volumes:
       - .:/code
     environment:
