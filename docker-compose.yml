@@ -7,7 +7,9 @@ services:
     environment:
       - PORT=3000
       - DATABASE_HOST=pg
-      - DATABASE_USERNAME=postgres
+      - DATABASE_USERNAME=staging-ruralia-decidim
+      - DATABASE_PASSWORD=q
+      - DATABASE_URL=staging-ruralia-decidim
       - RAILS_ENV=development
       - RAILS_LOG_TO_STDOUT=1
     ports:
