@@ -1,1 +1,0 @@
-require "wisper/rspec/version"
