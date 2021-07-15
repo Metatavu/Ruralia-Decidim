@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 DECIDIM_VERSION = "0.24.3"
-RUBY_VERSION = "2.7.1"
+RUBY_VERSION = "2.7.3"
 
 source "https://rubygems.org"
 
