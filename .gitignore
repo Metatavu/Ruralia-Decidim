@@ -36,3 +36,5 @@ public/uploads
 /config/application.yml
 
 db/migrate
+
+/vendor
