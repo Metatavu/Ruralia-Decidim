@@ -1,4 +1,4 @@
-FROM ruby:2.6.5
+FROM ruby:2.7.3
 
 ENV APP_HOME /code
 RUN apt-get update
@@ -11,4 +11,4 @@ WORKDIR /code
 RUN bundle install && bundle exec figaro install
 RUN apt install -y git imagemagick wget
 RUN rake assets:precompile
-CMD [ "bin/rails", "s" ]
+CMD "docker/init.sh"
