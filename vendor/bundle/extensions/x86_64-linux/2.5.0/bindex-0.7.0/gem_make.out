@@ -1,0 +1,15 @@
+current directory: /home/eskolahdesmaki/Documents/metatavu/DecidimMikkeli/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+/home/eskolahdesmaki/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20200611-127817-eddj46.rb extconf.rb
+creating Makefile
+
+current directory: /home/eskolahdesmaki/Documents/metatavu/DecidimMikkeli/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/eskolahdesmaki/Documents/metatavu/DecidimMikkeli/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.so
+
+current directory: /home/eskolahdesmaki/Documents/metatavu/DecidimMikkeli/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20200611-127817-ly9bmc/skiptrace

@@ -6,7 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-/vendor
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -35,3 +34,5 @@
 public/uploads
 # Ignore application configuration
 /config/application.yml
+
+/vendor

@@ -1,0 +1,123 @@
+ja:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: '名前'
+        redirect_uri: 'リダイレクトURI'
+        scopes: 'スコープ'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'はURLフラグメントを含めることはできません。'
+              invalid_uri: 'は有効なURIではありません。'
+              relative_uri: 'は絶対URIでなければなりません。'
+              secured_uri: 'はHTTPS/SSL URIでなければなりません。'
+              forbidden_uri: 'is forbidden by the server.'
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: '本当に削除しますか?'
+      buttons:
+        edit: '編集'
+        destroy: '削除'
+        submit: '登録'
+        cancel: 'キャンセル'
+        authorize: '認証'
+      form:
+        error: 'おっと!フォームにエラーがないか確認してください'
+      help:
+        redirect_uri: 'URIごとに1行で入力してください'
+        native_redirect_uri: 'ローカルテストのため、 %{native_redirect_uri} を使用してください。'
+        scopes: '各スコープをスペースで区切ってください。初期設定のスコープを使用する場合は、空白のままにしてください。'
+      edit:
+        title: 'アプリケーションの編集'
+      index:
+        title: 'アプリケーション'
+        new: '新しいアプリケーション'
+        name: '名称'
+        callback_url: 'コールバックURL'
+      new:
+        title: 'アプリケーションの作成'
+      show:
+        title: 'アプリケーション: %{name}'
+        application_id: 'アプリケーションID'
+        secret: 'シークレット'
+        scopes: 'スコープ'
+        callback_urls: 'コールバックURL'
+        actions: 'アクション'
+
+    authorizations:
+      buttons:
+        authorize: '承認'
+        deny: '否認'
+      error:
+        title: 'エラーが発生しました'
+      new:
+        title: '承認が必要です'
+        prompt: 'あなたのアカウントで %{client_name} 承認しますか?'
+        able_to: 'このアプリケーションは次のことが可能です'
+      show:
+        title: '認可コード'
+
+    authorized_applications:
+      confirmations:
+        revoke: '本当に取消しますか?'
+      buttons:
+        revoke: '取消'
+      index:
+        title: 'あなたの認証されたアプリケーション'
+        application: 'アプリケーション'
+        created_at: '作成日時'
+        date_format: '%Y年%m月%d日 %H:%M:%S'
+
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: '必須パラメータが不足しているか、サポートされていないパラメータが含まれているか、もしくはパラメータが不正であるため、リクエストを処理できませんでした。'
+        invalid_redirect_uri: '含まれるリダイレクトURIが正しくありません。'
+        unauthorized_client: 'クライアントはこのメソッドを用いたリクエストを実行する権限がありません。'
+        access_denied: 'リソースオーナーもしくは認可サーバがリクエストを拒否しました。'
+        invalid_scope: '指定されたスコープが無効か、不明か、もしくは正しくありません。'
+        server_error: '予期せぬ事態が発生したため、認可サーバはリクエストを処理できませんでした。'
+        temporarily_unavailable: '認可サーバが一時的に高負荷な状態にあるか、もしくはメンテナンス中であるため、リクエストを処理できません。'
+
+        #configuration error messages
+        credential_flow_not_configured: 'Doorkeeper.configure.resource_owner_from_credentialsが設定されていないため、リソースオーナーパスワードクレデンシャルフローは失敗しました。'
+        resource_owner_authenticator_not_configured: 'Doorkeeper.configure.resource_owner_authenticatorが設定されていないため、リソースオーナーの取得に失敗しました。'
+
+        # Access grant errors
+        unsupported_response_type: '認可サーバは指定されたレスポンスタイプをサポートしていません。'
+
+        # Access token errors
+        invalid_client: 'クライアントが不明か、クライアント認証が含まれていないか、もしくは認証メソッドがサポートされていないため、クライアント認証は失敗しました。'
+        invalid_grant: '指定された認可グラントは不正か、有効期限切れか、無効か、リダイレクトURIが異なるか、もしくは別のクライアントに適用されています。'
+        unsupported_grant_type: 'この認可グラントのタイプは認可サーバではサポートされていません。'
+
+        invalid_token:
+          revoked: "アクセストークンが取り消されました"
+          expired: "アクセストークンの有効期限が切れました"
+          unknown: "アクセストークンが無効です"
+
+    flash:
+      applications:
+        create:
+          notice: 'アプリケーションが作成されました。'
+        destroy:
+          notice: 'アプリケーションが削除されました。'
+        update:
+          notice: 'アプリケーションが更新されました。'
+      authorized_applications:
+        destroy:
+          notice: 'アプリケーションが取消されました。'
+
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'OAuth2 プロバイダー'
+          applications: 'アプリケーション'
+          home: 'ホーム'
+      application:
+        title: 'OAuth認証が必要です'

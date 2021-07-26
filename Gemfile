@@ -11,13 +11,13 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-initiatives", DECIDIM_VERSION
-gem "concurrent-ruby", "1.1.9"
 
 gem "bootsnap", "~> 1.7"
 
 gem "puma", ">= 5.3.1"
 gem "uglifier", "~> 4.1"
 gem 'delayed_job_active_record'
+
 gem "faker", "~> 2.14"
 
 group :development, :test do
