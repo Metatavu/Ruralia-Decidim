@@ -17,8 +17,6 @@ else
     echo -e "\e[32mDatabase just created so let's seed some data..."
     bin/rails db:seed
 fi
-echo -e "\e[33mSeeding hacks content..."
-bin/rails db:seed:hacks
 
 echo
 echo -e "\e[32mGreat! Please use this user/password to login:"
@@ -27,5 +25,6 @@ echo -e "\e[31madmin@example.org"
 echo -e "\e[31mdecidim123456"
 echo
 echo -e "\e[33mStarting rails server..."
+mkdir -p tmp/pids
 bundle exec puma
 # bundle exec rails server
