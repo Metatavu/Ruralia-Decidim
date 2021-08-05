@@ -6,6 +6,9 @@ bundle install
 echo -e "\e[33mUpgrading Decidim..."
 bin/rails decidim:upgrade
 
+echo -e "\e[33mCopying Decidim-awesome plugin migrations..."
+bundle exec rails decidim_decidim_awesome:install:migrations
+
 echo -e "\e[33mTrying to execute migrations..."
 if bin/rails db:migrate; then
     echo -e "\e[32mDatabase already created. No need for seeding."

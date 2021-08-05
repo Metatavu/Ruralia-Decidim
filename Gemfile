@@ -11,6 +11,7 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-initiatives", DECIDIM_VERSION
+gem "decidim-decidim_awesome", "~> 0.7.0" #depends on the decidim version
 
 gem "bootsnap", "~> 1.7"
 
