@@ -4,7 +4,7 @@ Decidim::DecidimAwesome.configure do |config|
   config.allow_images_in_full_editor = true
   config.auto_save_forms = true
   config.allow_images_in_small_editor = true
-  config.allow_images_in_proposals = true
+  config.allow_images_in_proposals = false
 
   # De-activated, admins don't even see it as an option
   config.use_markdown_editor = :disabled
