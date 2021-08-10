@@ -1,7 +1,0 @@
-sudo: false
-language: ruby
-before_install:
-  - gem install bundler
-script: rspec spec
-rvm:
-  - '2.4.0'
